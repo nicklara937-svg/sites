@@ -25,13 +25,14 @@
     <section id="sobre">
         <h2>Sobre mim</h2>
 
-        <img src="https://imgs.search.brave.com/L1Sj200vjUezrFe72jiltaykVVZo8s-ehKp7XAMssYA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iLnRo/dW1icy5yZWRkaXRt/ZWRpYS5jb20vdWVz/X0M5SkM4SFdEVUVk/WUVJbEdHZmJkcDNG/WHlSRHhGSnMxbV9z/Mm8tdy5qcGc" alt="foto minha" width="200"
-            height="200">
+        <img src="https://imgs.search.brave.com/L1Sj200vjUezrFe72jiltaykVVZo8s-ehKp7XAMssYA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iLnRo/dW1icy5yZWRkaXRt/ZWRpYS5jb20vdWVz/X0M5SkM4SFdEVUVk/WUVJbEdHZmJkcDNG/WHlSRHhGSnMxbV9z/Mm8tdy5qcGc"
+            alt="foto minha" width="200" height="200">
 
         <article>
-            <p>o gato sorridente</p> <p>adicionado mais um texto</p>
+            <p>o gato sorridente</p>
+            <p>adicionado mais um texto</p>
         </article>
-        
+
         <aside>
 
             <h3>Habilidades</h3>
@@ -69,11 +70,58 @@
 
             <p>Tem um projeto em mente? entre em contato!</p>
 
-            <address>
-                Email: <a href="mailto:nicklara937@gmail.com">nicklara937@gmail.com</a> <br>
-                Telefone: <a href="tel:+55(48)99163-2979">+55 (48) 99163-2979</a> <br>
-            </address>
-        
+            <form action="">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="duvida">Duvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for=" mensagem">Mensagem: </label>
+                <textarea id="mensagem" name="mensagem" cols="20" rows="5" required></textarea>
+
+                <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber novidades? fique por dentro!</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem"> <br>
+                <input type="date"> <br>
+
+
+
+                <label for="username">Nome de Usuario:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="pwd">Senha:</label><br>
+                <input type="password" id="pwd" name="pwd"><br>
+
+
+                <label for="fname">Primeiro nome:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Sobrenome:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+
+
+            </form>
+
+
         </section>
 
     </footer>
